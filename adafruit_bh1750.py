@@ -202,7 +202,7 @@ class BH1750:  # pylint:disable=too-many-instance-attributes
     def initialize(self) -> None:
         """Configure the sensors with the default settings."""
         self.mode = Mode.CONTINUOUS  # pylint:disable=no-member
-        self.resolution = Resolution.HIGH  # pylint:disable=no-member
+        self.resolution = Resolution.LOW  # pylint:disable=no-member
 
     @property
     def _settings(self) -> int:
